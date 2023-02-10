@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="A2T2.css">
+  <title>Projects</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: consolas;
+    }
+    #accordion{
+        background-color: white;
+        width: 600px;
+        margin: 100px auto;
+        border: 3px solid orange;
+    }
+    h3{
+        border: 1px solid grey;
+        background-color: grey;
+        color: white;
+        padding-top: 10px;
+        padding-left: 50px;
+        height: 3rem;
+        cursor: pointer;
+        transition: .5s;
+    }
+    h3:hover{
+      color: orange;
+    }
+    p{
+        width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+</style>
+<body>
+
+  <!--Menu bar on top of each page-->
+  
+<menu>
+  <a href="C:/Users/61481/Desktop/ICTICT433/index.html" class="logo">Logo</a>
+  <div class="searchbox">
+      <input class="search" type="text" placeholder="Search...">
+  </div>
+  <div class="buttons">
+    <button class="login" onclick="redirect();">Log in</button>
+    <button class="signup" onclick="redirect1();">Sign up</button>
+</div>
+</menu>
+
+<!--Navigation bar with home button, staff button and projects button-->
+
+<div class="navbar">
+  <button onclick="redirect2();">Home</button>
+	<button onclick="redirect3();">Staff</button>
+	<button onclick="redirect4();">Projects</button>
+</div>
+
+<!--container for accordion-->
+
+<div id="accordion">
+  <h3>Section 1</h3>
+  <div>
+    <p>
+    Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+    ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+    amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+    odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+    </p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>
+    Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+    purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+    velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+    suscipit faucibus urna.
+    </p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>
+    Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+    Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+    ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+    lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+    </p>
+  </div>
+  <h3>Section 4</h3>
+  <div>
+    <p>
+    Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+    faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+    mauris vel est.
+    </p>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#accordion" ).accordion({
+        collapsible: true
+    });
+  } );
+</script>
+<script>
+  function redirect(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/loginA2.html"
+  }
+  function redirect1(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/signupA2.html"
+  }
+  function redirect2(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/index.html"
+  }
+  function redirect3(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/staff.html"
+  }
+  function redirect4(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/projects.html"
+  }
+</script>
+</body>
+</html>

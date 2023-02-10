@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="A2T2.css">
+  <title>Staff</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+  text-decoration: none; 
+  list-style: none;
+}
+.tabs-container{
+  display: flex;
+  border: 3px solid orange;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+#tabs{
+  width: 60%;
+  background-color: white;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+ul li{
+  display: inline-block;
+  background-color: lightgrey;
+  margin: 0 2rem;
+  padding: 10px;
+  transition: .5s;
+}
+ul li a{
+  color: orange;
+  cursor: pointer;
+}
+ul li:hover{
+background-color: white;
+color: orange;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  width: 2rem;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+<body>
+
+<!--Menu bar on top of each page-->
+
+  <menu>
+    <a href="C:/Users/61481/Desktop/ICTICT433/index.html" class="logo">Logo</a>
+    <div class="searchbox">
+        <input class="search" type="text" placeholder="Search...">
+    </div>
+    <div class="buttons">
+      <button class="login" onclick="redirect();">Log in</button>
+      <button class="signup" onclick="redirect1();">Sign up</button>
+    </div>
+</menu>
+
+<!--Navigation bar with home button, staff button and projects button-->
+
+<div class="navbar">
+  <button onclick="redirect2();">Home</button>
+	<button onclick="redirect3();">Staff</button>
+	<button onclick="redirect4();">Projects</button>
+</div>
+
+<!--Container with tabs-->
+ 
+<div id="tabs">
+  <div class="tabs-container">
+  <ul>
+    <li><a href="#tabs-1">Full-time</a></li>
+    <li><a href="#tabs-2">Part-time</a></li>
+    <li><a href="#tabs-3">Casual</a></li>
+    <li><a href="#tabs-4">Contractors</a></li>
+  </ul>
+</div>
+  <div id="tabs-1">
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Surname</th>
+        <th>Email address</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>Full time</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+    </table>
+  </div>
+  <div id="tabs-2">
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Surname</th>
+        <th>Email address</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>Part time</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+    </table>
+  </div>
+  <div id="tabs-3">
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Surname</th>
+        <th>Email address</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>Casual</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+    </table>
+  </div>
+  <div id="tabs-4">
+    <table>
+      <tr>
+        <th>First name</th>
+        <th>Surname</th>
+        <th>Email address</th>
+        <th>Phone number</th>
+      </tr>
+      <tr>
+        <td>Contractor</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+      <tr>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+        <td>xxxx xxxx xxxx</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<script>
+  function redirect(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/loginA2.html"
+  }
+  function redirect1(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/signupA2.html"
+  }
+  function redirect2(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/index.html"
+  }
+  function redirect3(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/staff.html"
+  }
+  function redirect4(){
+      window.location = "file:///C:/Users/61481/Desktop/ICTICT433/projects.html"
+  }
+</script>
+</body>
+</html>
